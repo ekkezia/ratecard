@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useRef, useState, forwardRef, useEffect } from 'react';
+import React, { useRef, useState, forwardRef } from 'react';
 import './card.css';
 import FrontSide from './front-side';
 import BackSide from './back-side';
@@ -34,7 +34,7 @@ const Card = forwardRef<HTMLDivElement, FrontSideProps>(
         if (closestPoint) {
         // Animate card to closest snap point
         if (cardRef.current) {
-          const rect = cardRef.current.getBoundingClientRect();
+          // const rect = cardRef.current.getBoundingClientRect();
           controls.start({
             x: closestPoint.x ,
             y: closestPoint.y ,

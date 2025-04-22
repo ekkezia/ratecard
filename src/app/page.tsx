@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Card from './components/card/card';
-import { generateCards, sortCardsToTableau, TCard, TCardWithIdx } from './config/card-config';
+import { generateCards, sortCardsToTableau, TCardWithIdx } from './config/card-config';
 import './components/card/card.css';
 import { PanInfo } from 'motion/react';
 import Link from 'next/link';
@@ -10,7 +10,6 @@ import Link from 'next/link';
 export default function Home() {
   const lastCardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [snapPoints, setSnapPoints] = useState<({ x: number; y: number; column: number; } | null)[]>([]);
-  const [cards, setCards] = useState<TCard[] | null>([]);
   const [tableauCards, setTableauCards] = useState<TCardWithIdx[][] | null>([]);
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -18,8 +17,7 @@ export default function Home() {
   // Init: Sort card 
   useEffect(() => {
     const generatedCards = generateCards()
-    console.log('gen cards:', generatedCards[48])
-    setCards(generatedCards)
+    // console.log('gen cards:', generatedCards[48])
 
     // console.log('sorted cards:', sortCardsToTableau(generatedCards))
 
