@@ -11,11 +11,12 @@
   "dependencies": {
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
+    "jose": "^6.0.10",
     "motion": "^12.7.4",
     "next": "15.3.1",
+    "next-auth": "^4.24.11",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "three": "^0.175.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -29,16 +29,58 @@ body {
   font-family: var(--font-jacquard12), sans-serif;
 }
 
+.text-6xl {
+    font-size: 3.5rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 1rem; 
+  }
+}
+
+
+.text-2xl {
+    font-size: 1.5rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.8rem; 
+  }
+}
+
+.text-xl {
+    font-size: 1.2rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.7rem; 
+  }
+
+}
+
+
+.text-xs {
+    font-size: 0.8rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.5rem; 
+  }
+
+}
+
 .text-2xs {
   font-size: 0.325rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.2rem; 
+  }
 }
 
 .text-4xs {
   font-size: 0.25rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.1rem; 
+  }
+
 }
 
 .text-6xs {
   font-size: 0.2rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.08rem; 
+  }
 }
 
 /* Custom scrollbar styles */

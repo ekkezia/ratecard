@@ -7,6 +7,10 @@
   z-index: 0;
   position: relative;
   overflow: hidden;
+  @media(max-width: 1024px) {
+    width: 40px;
+    height: 60px;
+  }
 }
 .active {
   z-index: 999 !important;
@@ -22,6 +26,10 @@
   /* box-shadow: 0 0px 8px 10px rgba(255,0,0,0.8); */
   border: 1px solid grey;
   border-radius: 4px;
+  @media(max-width: 1024px) {
+    width: 40px;
+    height: 60px;
+  }
 }
 
 .flip-card:hover .flip-card-inner {

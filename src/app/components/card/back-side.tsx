@@ -8,9 +8,8 @@ interface BackSideProps {
 
 const BackSide: React.FC<BackSideProps> = ({ number, sign, color }) => {
   return (
-    <div className="flex flex-col justify-between h-full w-full p-2" style={{ color: color, background: 'white' }}>
-      <div className="flex items-center justify-between text-xl opacity-50 font-jacquard20 text-center">
-        <div className="font-jacquard12 text-md">{number}</div>
+    <div className="flex flex-col justify-between h-full w-full p-[4px] lg:p-2" style={{ color: color, background: 'white' }}>
+      <div className="flex items-center justify-start text-xl opacity-50 font-jacquard20 text-center">
         <div className="font-jacquard12 text-md">{number}</div>
       </div>
 
@@ -18,8 +17,7 @@ const BackSide: React.FC<BackSideProps> = ({ number, sign, color }) => {
         {sign}
       </div>
 
-      <div className="flex items-center justify-between text-xl opacity-50 font-jacquard20 text-center">
-        <div className="font-jacquard12 text-md">{number}</div>
+      <div className="flex items-center justify-end text-xl opacity-50 font-jacquard20 text-center">
         <div className="font-jacquard12 text-md">{number}</div>
       </div>
     </div>
