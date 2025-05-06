@@ -61,13 +61,7 @@ const PasswordInput: React.FC<PassportInputProps> = ({ open, onClose }) => {
     open && (
       <dialog 
         ref={dialogRef} 
-        className="fixed flex items-center justify-center font-jacquard12"
-        style={{ 
-          width: '100vw', 
-          height: '100vh', 
-          backgroundColor: 'rgba(75, 85, 99, 0.5)', 
-          // backdropFilter: 'blur(5px)', 
-        }}
+        className="fixed flex items-center justify-center font-jacquard12 w-screen h-screen bg-transparent"
       >
         <form 
           className="p-4 border-dashed border text-2xl relative bg-white max-w-[420px]"
